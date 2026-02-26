@@ -16,6 +16,9 @@ public class Alert {
     private String status; // NEW / INVESTIGATING / RESOLVED
     private LocalDateTime createdAt;
 
+    public Alert() {
+    }
+
     public Alert(Long alertId, String entityType, Long entityId, Integer riskScore, String message, String status, LocalDateTime createdAt) {
         this.alertId = alertId;
         this.entityType = entityType;

@@ -18,6 +18,9 @@ public class InvoiceHistory {
     private String reason;
     private LocalDateTime modifiedAt;
 
+    public InvoiceHistory() {
+    }
+
     public InvoiceHistory(Long historyId, Long invoiceId, BigDecimal oldAmount, BigDecimal newAmount, Long modifiedBy, Long shiftId, String reason, LocalDateTime modifiedAt) {
         this.historyId = historyId;
         this.invoiceId = invoiceId;

@@ -17,6 +17,9 @@ public class ActivityLog {
     private String description;
     private LocalDateTime createdAt;
 
+    public ActivityLog() {
+    }
+
     public ActivityLog(Long logId, Long userId, Long shiftId, String actionType, String entityType, Long entityId, String description, LocalDateTime createdAt) {
         this.logId = logId;
         this.userId = userId;

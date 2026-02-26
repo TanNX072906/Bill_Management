@@ -14,6 +14,9 @@ public class Shift {
     private LocalDateTime endTime;
     private String status; // OPEN / CLOSED
 
+    public Shift() {
+    }
+
     public Shift(Long shiftId, Long userId, LocalDateTime startTime, LocalDateTime endTime, String status) {
         this.shiftId = shiftId;
         this.userId = userId;

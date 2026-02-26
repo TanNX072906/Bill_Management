@@ -17,6 +17,9 @@ public class Invoice {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    public Invoice() {
+    }
+
     public Invoice(Long invoiceId, String invoiceCode, BigDecimal amount, String status, Long createdBy, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.invoiceId = invoiceId;
         this.invoiceCode = invoiceCode;

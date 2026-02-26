@@ -15,6 +15,9 @@ public class User {
     private String status;    // ACTIVE / LOCKED
     private LocalDateTime createdAt;
 
+    public User() {
+    }
+
     public User(Long userId, String username, String passwordHash, String role, String status, LocalDateTime createdAt) {
         this.userId = userId;
         this.username = username;

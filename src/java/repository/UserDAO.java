@@ -188,7 +188,10 @@ public class UserDAO {
         user.setPasswordHash(rs.getString("password_hash"));
         user.setRole(rs.getString("role"));
         user.setStatus(rs.getString("status"));
-        user.setCreatedAt(rs.getTimestamp("created_at"));
+        Timestamp ts = rs.getTimestamp("created_at");
+        if (ts != null) {
+            user.setCreatedAt(ts.toLocalDateTime());
+        }   
         return user;
     }
 }
